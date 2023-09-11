@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preload" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyB1XyNmFQOdz2dJ3IR4KpBvU_FfqVbeZgQ",
+          authDomain: "propuesta-35b99.firebaseapp.com",
+          projectId: "propuesta-35b99",
+          storageBucket: "propuesta-35b99.appspot.com",
+          messagingSenderId: "265323006850",
+          appId: "1:265323006850:web:abb3f04d4ea5143b2b9d9b",
+          measurementId: "G-999HN5JDHX"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+    <main>
+        <section class="caja">
+
+
+        <h1>Recordatorio</h1>
+        <p>Vamos a tomar un Gin?...</p>
+        <div class="copita">
+
+        </div>
+        <section class="botones">
+            <div>
+                <a href="#" id="botonRechazar">Rechazar</a>
+            </div>
+            <div>
+                <a href="#" id="botonAceptar">Aceptar</a>
+            </div>
+            <script>
+                // Obtén referencias a los botones por sus identificadores
+                const botonRechazar = document.getElementById("botonRechazar");
+                const botonAceptar = document.getElementById("botonAceptar");
+            
+                // Agrega controladores de eventos para cuando se hace clic en los botones
+                botonRechazar.addEventListener("click", function() {
+                    // Realiza alguna acción cuando se hace clic en Rechazar
+                    alert("Todo triste");
+                    // Puedes enviar la respuesta al servidor aquí si es necesario
+                });
+            
+                botonAceptar.addEventListener("click", function() {
+                    // Realiza alguna acción cuando se hace clic en Aceptar
+                    alert("Genial, hablamee");
+                    // Puedes enviar la respuesta al servidor aquí si es necesario
+                });
+            </script>
+                        
+        </section>
+        </section>
+    </main>
+</body>
+</html>
